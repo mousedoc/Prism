@@ -15,7 +15,7 @@ git clone https://github.com/mousedoc/Prism
 # 저장소의 위치로 이동
 cd Prism
 
-# 설치 및 실해
+# 설치 및 실
 npm install && npm start
 ```
 
