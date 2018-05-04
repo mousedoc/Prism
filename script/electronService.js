@@ -1,6 +1,7 @@
 const electron = require('electron');
 const browserWindow = electron.BrowserWindow;
 
+
 module.exports = 
 {
     Electron : electron,

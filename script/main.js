@@ -1,5 +1,5 @@
-const Electron = require('./Electron.js');
-const Windows = require('./Windows.js');
+const Electron = require('./electronService.js');
+const Windows = require('./windowService.js');
 
 // READY
 Electron.App.on('ready', Windows.CreateMainWindow);
@@ -11,7 +11,8 @@ Electron.App.on('window-all-closed', function ()
   {
     Electron.App.quit();
   }
-})
+});
+
 
 // ACTIVATE
 Electron.App.on('activate', function ()
@@ -20,6 +21,12 @@ Electron.App.on('activate', function ()
   // dock icon is clicked and there are no other windows open.
   if (Windows.MainWindow === null) 
   {
+    action();
     Windows.CreateMainWindow();
   }
+});
+
+Electron.App.on('closed', function ()
+{
+  Windows.MainWindow = null;
 });
