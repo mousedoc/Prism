@@ -2,7 +2,7 @@
   "name": "Prism",
   "version": "0.0.1",
   "description": "Soundcloud Desktop Application",
-  "main": "main.js",
+  "main": "script/main.js",
   "scripts": {
     "start": "electron ."
   },
