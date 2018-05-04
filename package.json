@@ -8,8 +8,8 @@
   },
   "repository": "https://github.com/mousedoc/Prism",
   "keywords": [
-    "Javascript",
     "Electron",
+    "Javascript",
     "Soundcloud"
   ],
   "author": "Mousedoc",
