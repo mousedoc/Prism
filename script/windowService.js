@@ -1,4 +1,4 @@
-const Electron = require('./electronService');
+const Electron = require('./electronService').Electron;
 
 let mainWindow;
 
@@ -8,7 +8,7 @@ function createMainWindow ()
   var url = require('url');
 
   // Create the browser window.
-  mainWindow = new Electron.BrowserWindow({width: 800, height: 600});
+  mainWindow = new Electron.BrowserWindow({width: 800, height: 600, titleBarStyle: 'hidden'});
   var urlFormat = url.format(
   {
     pathname : path.join(__dirname, '../html/index.html'),
