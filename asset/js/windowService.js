@@ -9,7 +9,14 @@ function createMainWindow ()
   var url = require('url');
 
   // Create the browser window.
-  mainWindow = new Electron.BrowserWindow({width: 800, height: 600, titleBarStyle: 'hidden'});
+  mainWindow = new Electron.BrowserWindow(
+  {
+    width: 800, 
+    height: 600,
+    titleBarStyle: 'hidden',
+    backgroundColor: "white",
+  });
+
   var urlFormat = url.format(
   {
     pathname : path.join(__dirname, mainPage),
@@ -19,6 +26,8 @@ function createMainWindow ()
 
   mainWindow.loadURL(urlFormat);
 }
+
+
 
 module.exports = 
 {

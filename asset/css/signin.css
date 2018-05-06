@@ -12,11 +12,7 @@
 
   margin:auto;
 
-  
-  /* Text Color and Background Color */
-  color: white;
-  /* background: #ffbd17; */
-  /* border: 3px solid green; */
+  border: 3px solid orange;
 }
 
 #signin-title 

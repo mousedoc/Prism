@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<script src="../script/localizeService.js"></script>
-<script src="../script/soundcloudService.js"></script>
-<link rel="stylesheet" type="text/css" href="signin.css">
-<link rel="stylesheet" type="text/css" href="text-set.css">
+<script src="../js/localizeService.js"></script>
+<script src="../js/soundcloudService.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/signin.css">
+<link rel="stylesheet" type="text/css" href="../csstitle-bar.css">
+<link rel="stylesheet" type="text/css" href="../css/text-set.css">
 
 <html>
   <meta charset="UTF-8">
@@ -11,10 +12,11 @@
   </head>
 
   <body>
+    <div id="top-title-bar"></div>
 
     <div id="signin-panel">
       <div id="title-center-orange">
-        Application Name : <a id="example">not initialized</a>
+        <desc id="example">not initialized</desc>
         <script>
           document.getElementById("example").innerHTML = toLocalize("application_name"); 
         </script>

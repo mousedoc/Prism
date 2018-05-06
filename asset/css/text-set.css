@@ -1,6 +1,7 @@
-@font-face {
+@font-face 
+{
   font-family: "neou-thin";
-  src:url("../resource/font/Neou-Thin.ttf");
+  src:url("../font/Neou-Thin.ttf");
 }
 
 #title-center-orange 

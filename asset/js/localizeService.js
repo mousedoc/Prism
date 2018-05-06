@@ -1,4 +1,4 @@
-let languageObject = require("../resource/json/language.json");
+let languageObject = require("../json/language.json");
 // let currentLanguage = require('electron').app.getLocale();
 
 function toLocalize(key)
@@ -16,9 +16,11 @@ function toLocalize(key)
                 case 'ko':
                     console.log(elem.korean);
                     return elem.korean;
+                    
                 case 'ja':
                     console.log(elem.japanese);
                     return elem.japanese;
+
                 default:
                     console.log(elem.english);
                     return elem.english;
