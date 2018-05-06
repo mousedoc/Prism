@@ -1,26 +1,29 @@
 <!DOCTYPE html>
+<script src="../script/localizeService.js"></script>
+<script src="../script/soundcloudService.js"></script>
+<link rel="stylesheet" type="text/css" href="signin.css">
+<link rel="stylesheet" type="text/css" href="text-set.css">
+
 <html>
   <meta charset="UTF-8">
+
   <head>    
-    <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <!-- Soundcloud api -->
-    <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
-
-    <script src="../script/localizeService.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="signin.css">
   </head>
 
   <body>
 
     <div id="signin-panel">
-      <div id="signin-title">
-        example : <a id="example">zz</a>
+      <div id="title-center-orange">
+        Application Name : <a id="example">not initialized</a>
         <script>
-          document.getElementById("example").innerHTML = window.toLocalize("application_name"); 
+          document.getElementById("example").innerHTML = toLocalize("application_name"); 
         </script>
       </div>
+
+      <div id="signin-button">
+        <button onclick="initialize();">Visit Page Now</button>
+      </div>
+
     </div>
     
   </body>
