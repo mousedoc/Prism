@@ -7,6 +7,8 @@
     <!-- Soundcloud api -->
     <script src="https://connect.soundcloud.com/sdk/sdk-3.3.0.js"></script>
 
+    <script src="../script/localizeService.js"></script>
+
     <link rel="stylesheet" type="text/css" href="signin.css">
   </head>
 
@@ -14,7 +16,10 @@
 
     <div id="signin-panel">
       <div id="signin-title">
-        Line 1
+        example : <a id="example">zz</a>
+        <script>
+          document.getElementById("example").innerHTML = window.toLocalize("application_name"); 
+        </script>
       </div>
     </div>
     
