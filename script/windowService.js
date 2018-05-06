@@ -1,9 +1,10 @@
 const Electron = require('./electronService').Electron;
 
 let mainWindow;
+let mainPage = '../html/signin.html';
 
 function createMainWindow () 
-{
+{   
   var path = require('path');
   var url = require('url');
 
@@ -11,10 +12,11 @@ function createMainWindow ()
   mainWindow = new Electron.BrowserWindow({width: 800, height: 600, titleBarStyle: 'hidden'});
   var urlFormat = url.format(
   {
-    pathname : path.join(__dirname, '../html/index.html'),
+    pathname : path.join(__dirname, mainPage),
     protocol : 'file',
     slashes : true
   });
+
   mainWindow.loadURL(urlFormat);
 }
 

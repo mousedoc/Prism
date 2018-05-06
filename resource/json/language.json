@@ -1,0 +1,26 @@
+[
+    {
+        "id": "application_name",
+        "korean": "프리즘",
+        "english": "Prism",
+        "japanese": "プリズム"
+    },
+    {
+        "id": "korean",
+        "korean": "한국어",
+        "english": "Korean",
+        "japanese": "韓国語"
+    },
+    {
+        "id": "english",
+        "korean": "영어",
+        "english": "English",
+        "japanese": "英語"
+    },
+    {
+        "id": "japanese",
+        "korean": "일본어",
+        "english": "Japanese",
+        "japanese": "日本語"
+    }
+]
