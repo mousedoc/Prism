@@ -9,6 +9,9 @@ Soundcloud desktop application project
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
+# Install electron globally
+npm install -g electron
+
 # Clone this repository
 git clone https://github.com/mousedoc/Prism
 
@@ -16,7 +19,7 @@ git clone https://github.com/mousedoc/Prism
 cd Prism
 
 # Install dependencies and run the app
-npm install && npm start
+npm install && electron .
 ```
 
 ## License
