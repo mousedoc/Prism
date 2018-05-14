@@ -17,7 +17,7 @@ PARENT_COLUMN_NAME = '*parent'
 IGNORE_WILDCARD = '_'
 REQUIRE_VERSION = (3, 5)
 EXCEL_PATH = './excel/'
-JSON_PATH = '../../resource/language/'
+JSON_PATH = '../../asset/json/'
 
 
 # Class

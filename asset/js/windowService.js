@@ -1,7 +1,7 @@
 const Electron = require('./electronService').Electron;
 
 let mainWindow;
-let mainPage = '../html/signin.html';
+let mainPage = '../html/index.html';
 
 function createMainWindow () 
 {   

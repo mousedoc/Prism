@@ -22,5 +22,29 @@
         "korean": "일본어",
         "english": "Japanese",
         "japanese": "日本語"
+    },
+    {
+        "id": "timeline-menu",
+        "korean": "Timeline",
+        "english": "Timeline",
+        "japanese": "Timeline"
+    },
+    {
+        "id": "likes-menu",
+        "korean": "Likes",
+        "english": "Likes",
+        "japanese": "Likes"
+    },
+    {
+        "id": "playlists-menu",
+        "korean": "Playlists",
+        "english": "Playlists",
+        "japanese": "Playlists"
+    },
+    {
+        "id": "stations-menu",
+        "korean": "Stations",
+        "english": "Stations",
+        "japanese": "Stations"
     }
 ]

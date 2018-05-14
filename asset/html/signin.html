@@ -8,23 +8,56 @@
 <html>
   <meta charset="UTF-8">
 
-  <head>    
-  </head>
 
+  <!-- Head -->
+  <head></head>
+
+  <!-- Body -->
   <body>
-    <div id="top-title-bar"></div>
 
-    <div id="signin-panel">
+    <!-- Sidebar -->
+    <section id="sidebar">
+
+        <!-- Basic elements -->
+				<div class="basic">
+					<nav>
+						<ul>
+							<li><a id="browse-menu" data-section="welcome" href="#">browse-menu</a></li>
+							<li><a id="likes-menu" data-section="ipcremote" href="#">likes-menu</a></li>
+							<li><a id="playlists-menu" data-section="whatwedo" href="#">playlists-menu</a></li>
+							<li><a id="stations-menu" datad-section="getintouch" href="#">stations-menu</a></li>
+						</ul>
+					</nav>
+        </div>
+        
+
+        <!-- User elements -->
+        <div class="user">
+          
+        </div>
+
+			</section>
+
+
+      <!-- Localizing -->
+      <script>
+          // Sidebar
+          document.getElementById("browse-menu").innerHTML = toLocalize("browse-menu"); 
+          document.getElementById("likes-menu").innerHTML = toLocalize("likes-menu"); 
+          document.getElementById("playlists-menu").innerHTML = toLocalize("playlists-menu"); 
+          document.getElementById("stations-menu").innerHTML = toLocalize("stations-menu"); 
+
+      </script>
+
+          <!-- <div id="signin-panel">
       <div id="title-center-orange">
-        <desc id="example">not initialized</desc>
-        <script>
-          document.getElementById("example").innerHTML = toLocalize("application_name"); 
-        </script>
-      </div>
+        <desc id="title">not initialized</desc>
+        </div>
 
       <div id="signin-button">
         <button onclick="initialize();">Visit Page Now</button>
-      </div>
+      </div> -->
+
 
     </div>
     

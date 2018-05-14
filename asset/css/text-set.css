@@ -4,19 +4,10 @@
   src:url("../font/Neou-Thin.ttf");
 }
 
-#title-center-orange 
-{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-
-  text-align: center;
+sidemenu-orange
+{  
   font-family: "neou-thin";
-  font-size: 32px;
+  font-size: 18px;
 
   background: #ff8944;
   background: -moz-linear-gradient(top, #ff8944 0%, #ff6d1e 100%);
@@ -27,19 +18,10 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8944', endColorstr='#ff6d1e',GradientType=0 );
 }
 
-#title-center-sky 
+sidemenu-skyblue
 {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-
-  text-align: center;
   font-family: "neou-thin";
-  font-size: 32px;
+  font-size: 18px;
 
   background: #44b4ff;
   background: -moz-linear-gradient(top, #44b4ff 0%, #1e6dff 100%);
