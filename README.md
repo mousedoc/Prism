@@ -19,7 +19,9 @@ git clone https://github.com/mousedoc/Prism
 cd Prism
 
 # Install dependencies and run the app
-npm install && electron .
+npm install && npm run dev
+
+# After the development server is created on localhost:3000, the Electron are started.
 ```
 
 ## License
