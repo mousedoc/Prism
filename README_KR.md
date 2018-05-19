@@ -19,7 +19,9 @@ git clone https://github.com/mousedoc/Prism
 cd Prism
 
 # 모듈 설치 및 실행
-npm install && electron .
+npm install && npm run dev
+
+# 개발서버가 localhost:3000에 생성된 후 일렉트론이 시작됩니다.
 ```
 
 ## 라이센스
