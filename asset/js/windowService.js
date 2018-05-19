@@ -1,4 +1,5 @@
 const Electron = require('./electronService').Electron;
+const WindowProperty = require('./windowProperty');
 
 let mainWindow;
 let mainPage = '../html/index.html';
@@ -8,26 +9,20 @@ function createMainWindow ()
   var path = require('path');
   var url = require('url');
 
-  // Create the browser window.
-  mainWindow = new Electron.BrowserWindow(
-  {
-    width: 800, 
-    height: 600,
-    titleBarStyle: 'hidden',
-    backgroundColor: "white",
-  });
+  // Declare
+  mainWindow = new Electron.BrowserWindow(require('./windowProperty').GetProperty());
 
-  var urlFormat = url.format(
-  {
-    pathname : path.join(__dirname, mainPage),
-    protocol : 'file',
-    slashes : true
-  });
+  // Server or local file path
+  var uri = process.env.ELECTRON_START_URL || 
+            url.format(
+            {
+              pathname : path.join(__dirname, mainPage),
+              protocol : 'file',
+              slashes : true
+            });
 
-  mainWindow.loadURL(urlFormat);
+  mainWindow.loadURL(uri);
 }
-
-
 
 module.exports = 
 {
